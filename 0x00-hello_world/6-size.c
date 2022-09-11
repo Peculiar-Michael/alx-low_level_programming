@@ -1,8 +1,12 @@
 #include <stdio.h>
+
 /**
-*main - prints tge function
-*Return: Always 0
-*/
+ * main - print the string
+ *
+ * Description: main function
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	char c;
@@ -17,3 +21,4 @@ int main(void)
 	printf("Size of a long long int: %ld byte(s)\n", sizeof(lli));
 	printf("Size of a float: %ld byte(s)\n", sizeof(f));
 	return (0);
+}
