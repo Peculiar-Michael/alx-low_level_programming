@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*print_diagonal - print character "\" n times
+*print_diagonal - print forward slash  n times
 *@n: number of characters to draw a diagonal
 */
 
@@ -13,7 +13,7 @@ void print_diagonal(int n)
 	{
 		for (slash = 1; slash <= n; slash++)
 		{
-			for (space = 1; space < line; space++)
+			for (space = 1; space < slash; space++)
 			_putchar(' ');
 			_putchar('\\');
 			_putchar('\n');
