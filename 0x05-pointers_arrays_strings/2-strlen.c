@@ -5,14 +5,14 @@
 *_strlen - the length of the string
 *@s: the pointer holding the string
 *
-*Return: 0
+*Return: string length 
 */
 
 int _strlen(char *s)
 {
 	int len = 0;
 
-	while (*s != '\0')
+	while (*(s + len) != '\0')
 	len++;
 
 	return (len);
