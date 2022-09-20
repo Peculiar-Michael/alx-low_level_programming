@@ -1,23 +1,23 @@
 #include "main.h"
+#include <string.h>
 
 /**
-*print_rev - prints strubg in reverse order
-*@s: address of the pointer of the string
-*Return: 0
-*/
-
+ * print_rev - prints a string in stdout in reverse
+ * @s: string to print
+ *
+ * Return: void
+ */
 void print_rev(char *s)
 {
-	int length = strlen(s);
-	int middle = length / 2;
-	char temp;
+	int i = 0;
 
-	for (i = 0; i < middle; i++)
+	while (*(s + i))
+		i++;
+	i = i - 1;
+	while (i >= 0)
 	{
-		temp = s[i];
-		s[i] = s[length - i - 1];
-		s[length - i - 1] = temp;
+		_putchar(*(s + i));
+		i--;
 	}
 	_putchar('\n');
 }
-
