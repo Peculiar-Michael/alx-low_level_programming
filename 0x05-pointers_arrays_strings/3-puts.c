@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 
 /**
 *_puts - a function that prints a string until the first newline character
@@ -13,7 +13,7 @@ void _puts(char *str)
 
 	while (*str[i] != '\0')
 	{
-		putchar(*str[i]);
+		putchar(str[i]);
 		i++;
 	}
 	_putchar('\n');
