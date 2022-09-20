@@ -2,14 +2,18 @@
 #include <string.h>
 
 /**
-*_strlen - print the length of a string
-*@s: the string to be counted
-*Return: nothing
+*_strlen - the length of the string
+*@s: the pointer holding the string
+*
+*Return: 0
 */
 
 int _strlen(char *s)
 {
-	strlen(char *s);
+	int len = 0;
 
-	return (0);
+	while (*s != '\0')
+	len++;
+
+	return (len);
 }
